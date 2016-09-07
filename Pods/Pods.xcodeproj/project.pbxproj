@@ -1,0 +1,852 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2ECFD3701E86266BB9270198A9443795 /* Pods-LovFoodAdminUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 565B360FBA0CE4ABF6998C9EEB0EC9FE /* Pods-LovFoodAdminUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B9984020A1D1B713B9D96BDAFF22379 /* Pods-LovFoodAdmin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BD5CD1AAD73E7E992C19822A016ED56 /* Pods-LovFoodAdmin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65C658000A7D6E6B589B9F575711DCF7 /* Pods-LovFoodAdminTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 951A994DFF74AD534FFAF8F701DFC3AC /* Pods-LovFoodAdminTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		911C53D72158554851A4B7E2D3443BC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		A0BFE036B0A77E7B171BC0A6FE4F44BE /* Pods-LovFoodAdminTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 662731C673D815A1D1293491F18FAD09 /* Pods-LovFoodAdminTests-dummy.m */; };
+		A37F5DEDCB67516E5635FD57019E6A45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		DAF1753E42894F931138E66FE64A5CE3 /* Pods-LovFoodAdmin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C584E981AE413593F85C7818DA4F4E /* Pods-LovFoodAdmin-dummy.m */; };
+		E7E3F42ED8744F3AAAD9A1A6A9F075CB /* Pods-LovFoodAdminUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCE249B7242930C47FD66EC03B064FE /* Pods-LovFoodAdminUITests-dummy.m */; };
+		EC73CB4AC0A16A565804EA0169DF1660 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0690B02DA41066CE1F1798BCF565E222 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		1815D2A3010404CD543E84C5268BCABC /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		209367A92950815AF9F91720A3840757 /* Pods-LovFoodAdmin-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LovFoodAdmin-acknowledgements.markdown"; sourceTree = "<group>"; };
+		23D31B0D3FA223D007902B50C75E8CF5 /* Pods-LovFoodAdminUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LovFoodAdminUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		270F7D20DD2FB24C63EB96A43E1294E7 /* Pods-LovFoodAdmin-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LovFoodAdmin-resources.sh"; sourceTree = "<group>"; };
+		28E068939D9EE20C8EF10B07D3E31F4C /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		41DA810FBCB7E6F27D6E8BB36CE01B2A /* Pods-LovFoodAdminTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LovFoodAdminTests-resources.sh"; sourceTree = "<group>"; };
+		4B9973432FF69457E79F1FD053B7BDDF /* Pods-LovFoodAdminUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LovFoodAdminUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4D775ACD4422D4DEC0DC56735BBDE3DF /* Pods-LovFoodAdminUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LovFoodAdminUITests-frameworks.sh"; sourceTree = "<group>"; };
+		4DD84742871A6446D9EC6D3556EE9043 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Analytics/Sources/Firebase.h; sourceTree = "<group>"; };
+		4ECCE3402153259021AF24C923F9DB31 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		565B360FBA0CE4ABF6998C9EEB0EC9FE /* Pods-LovFoodAdminUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LovFoodAdminUITests-umbrella.h"; sourceTree = "<group>"; };
+		5805B94F20AE709A488641EAF05D1EE8 /* Pods_LovFoodAdminTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LovFoodAdminTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AF47CE652B7595BE8047AC48260192C /* Pods-LovFoodAdminUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LovFoodAdminUITests.modulemap"; sourceTree = "<group>"; };
+		63DDFEFC1970DD137BD9F7846F09ECAB /* GoogleParsingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleParsingUtilities.framework; path = Frameworks/GoogleParsingUtilities.framework; sourceTree = "<group>"; };
+		662731C673D815A1D1293491F18FAD09 /* Pods-LovFoodAdminTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LovFoodAdminTests-dummy.m"; sourceTree = "<group>"; };
+		74221A11F5559623FF3D423E6DCCB341 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
+		743AC40A0AEAEC42BDB746DAF2075CB2 /* Pods-LovFoodAdmin-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LovFoodAdmin-frameworks.sh"; sourceTree = "<group>"; };
+		7565F37A17A858A8EF32E5582459B18D /* Pods-LovFoodAdmin-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LovFoodAdmin-acknowledgements.plist"; sourceTree = "<group>"; };
+		832CF3A18CD9B4B8583C5DFE1F62C8E4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8759643F9974C9B3B7507D6932BFFCC8 /* Pods-LovFoodAdminTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LovFoodAdminTests.release.xcconfig"; sourceTree = "<group>"; };
+		8C18A8BB696F3F1C10374471EA79B546 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		8DD4AF354ED5A83AF4FFE1FE41FEAECD /* Pods-LovFoodAdminTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LovFoodAdminTests.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		940332AF80FC18CA551A7B41B9C6A212 /* Pods-LovFoodAdmin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LovFoodAdmin.debug.xcconfig"; sourceTree = "<group>"; };
+		951A994DFF74AD534FFAF8F701DFC3AC /* Pods-LovFoodAdminTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LovFoodAdminTests-umbrella.h"; sourceTree = "<group>"; };
+		9758B4BF1482DA11E5388080170D0D55 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BD5CD1AAD73E7E992C19822A016ED56 /* Pods-LovFoodAdmin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LovFoodAdmin-umbrella.h"; sourceTree = "<group>"; };
+		A46525769923E80CA1C5F5E85F668803 /* Pods-LovFoodAdminUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LovFoodAdminUITests-resources.sh"; sourceTree = "<group>"; };
+		A7C584E981AE413593F85C7818DA4F4E /* Pods-LovFoodAdmin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LovFoodAdmin-dummy.m"; sourceTree = "<group>"; };
+		ADCE249B7242930C47FD66EC03B064FE /* Pods-LovFoodAdminUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LovFoodAdminUITests-dummy.m"; sourceTree = "<group>"; };
+		B07914CE61B45E2BCCE466D2E4FCE05F /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		B1956E16C55CAD74DC3A661382B1A505 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4681D183129176945E0774B09EC4ECC /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
+		B50D887E3390220C5B5C7DC84C847616 /* Pods_LovFoodAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LovFoodAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B911EA34F2B206668B6F061697F17A /* Pods-LovFoodAdminTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LovFoodAdminTests-frameworks.sh"; sourceTree = "<group>"; };
+		B8562D84A7458BC7A6F3250E728A85DD /* Pods_LovFoodAdminUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LovFoodAdminUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF419D3A51C555E3196345B2CC32BA55 /* Pods-LovFoodAdminTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LovFoodAdminTests.modulemap"; sourceTree = "<group>"; };
+		C6CB5454893C66B0BF6F93E863A589BC /* Pods-LovFoodAdminTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LovFoodAdminTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CDCE3CFC45B3157B8C4954336F653CAF /* Pods-LovFoodAdminTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LovFoodAdminTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D1353A7B505F063B498D53C11401434A /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Frameworks/frameworks/FirebaseStorage.framework; sourceTree = "<group>"; };
+		E4673B5796D38B3D666E1AA032D096BF /* Pods-LovFoodAdminUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LovFoodAdminUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E4A8B490412B219C0B5B3F8A6B6BA7F0 /* Pods-LovFoodAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LovFoodAdmin.release.xcconfig"; sourceTree = "<group>"; };
+		E50385470E52BEE7B96F7973988D0293 /* Pods-LovFoodAdmin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LovFoodAdmin.modulemap"; sourceTree = "<group>"; };
+		F49019F577398D68950086920B7B7783 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		FBFF982E6455778E411052C0C1A20006 /* Pods-LovFoodAdminUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LovFoodAdminUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A30068E41B7D8D3074D76A8A618756E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC73CB4AC0A16A565804EA0169DF1660 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33030E99C0A9877128D2D478D2738536 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A37F5DEDCB67516E5635FD57019E6A45 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1BF8DC4BF5ADDFF2BF9BA30CE33DF3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				911C53D72158554851A4B7E2D3443BC2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02DE93CB1A1751D6B5E41CC16E30DBF8 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				4DD84742871A6446D9EC6D3556EE9043 /* Firebase.h */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
+		2C152434E318BDFC6AAA4637635C92CB /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				34A0684B5AC997FEE0A96FA25B4950BF /* Frameworks */,
+			);
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		34A0684B5AC997FEE0A96FA25B4950BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0690B02DA41066CE1F1798BCF565E222 /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		453639F77B3EB6B4CF18A5FD54CDAE71 /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				48FDA7781B212532661B34258760D0BC /* Frameworks */,
+			);
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		48FDA7781B212532661B34258760D0BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F49019F577398D68950086920B7B7783 /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52DBBAC8136B72D335257521179F4002 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1353A7B505F063B498D53C11401434A /* FirebaseStorage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6260985D180B8FEB7FC63E1953C6BB6B /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				C116C31BAE424153AD00D6BFFC07ED1C /* Frameworks */,
+			);
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		6580F1087CB9A5ADBF554447B2181AC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4681D183129176945E0774B09EC4ECC /* FirebaseAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				D747591A8FEEFD8CD1042642C4C3A35F /* Pods */,
+				BA21157E39E1A0C8952E8D3C7517EC20 /* Products */,
+				FAA8C3D282D77CE1F8543E991899F207 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		863D8178306DF5EA35115F54FE9DB8DC /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				02DE93CB1A1751D6B5E41CC16E30DBF8 /* Analytics */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		89C482C500CAC5298583C8F231C91FDB /* GoogleParsingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				F4165ED857874553CD1CDC90E0ECC575 /* Frameworks */,
+			);
+			path = GoogleParsingUtilities;
+			sourceTree = "<group>";
+		};
+		A6AD1E8361F23DD7FC20CF1F5F6193F0 /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				BA74169EA2E244B7BF9E5C173AC728CD /* Frameworks */,
+			);
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		AB5AE301239665AC1FC4C1867A46D2F7 /* Pods-LovFoodAdmin */ = {
+			isa = PBXGroup;
+			children = (
+				832CF3A18CD9B4B8583C5DFE1F62C8E4 /* Info.plist */,
+				E50385470E52BEE7B96F7973988D0293 /* Pods-LovFoodAdmin.modulemap */,
+				209367A92950815AF9F91720A3840757 /* Pods-LovFoodAdmin-acknowledgements.markdown */,
+				7565F37A17A858A8EF32E5582459B18D /* Pods-LovFoodAdmin-acknowledgements.plist */,
+				A7C584E981AE413593F85C7818DA4F4E /* Pods-LovFoodAdmin-dummy.m */,
+				743AC40A0AEAEC42BDB746DAF2075CB2 /* Pods-LovFoodAdmin-frameworks.sh */,
+				270F7D20DD2FB24C63EB96A43E1294E7 /* Pods-LovFoodAdmin-resources.sh */,
+				9BD5CD1AAD73E7E992C19822A016ED56 /* Pods-LovFoodAdmin-umbrella.h */,
+				940332AF80FC18CA551A7B41B9C6A212 /* Pods-LovFoodAdmin.debug.xcconfig */,
+				E4A8B490412B219C0B5B3F8A6B6BA7F0 /* Pods-LovFoodAdmin.release.xcconfig */,
+			);
+			name = "Pods-LovFoodAdmin";
+			path = "Target Support Files/Pods-LovFoodAdmin";
+			sourceTree = "<group>";
+		};
+		BA21157E39E1A0C8952E8D3C7517EC20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B50D887E3390220C5B5C7DC84C847616 /* Pods_LovFoodAdmin.framework */,
+				5805B94F20AE709A488641EAF05D1EE8 /* Pods_LovFoodAdminTests.framework */,
+				B8562D84A7458BC7A6F3250E728A85DD /* Pods_LovFoodAdminUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA74169EA2E244B7BF9E5C173AC728CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B07914CE61B45E2BCCE466D2E4FCE05F /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBBD0E7A3AFF37B82105C64FEAE48088 /* Pods-LovFoodAdminTests */ = {
+			isa = PBXGroup;
+			children = (
+				9758B4BF1482DA11E5388080170D0D55 /* Info.plist */,
+				BF419D3A51C555E3196345B2CC32BA55 /* Pods-LovFoodAdminTests.modulemap */,
+				CDCE3CFC45B3157B8C4954336F653CAF /* Pods-LovFoodAdminTests-acknowledgements.markdown */,
+				C6CB5454893C66B0BF6F93E863A589BC /* Pods-LovFoodAdminTests-acknowledgements.plist */,
+				662731C673D815A1D1293491F18FAD09 /* Pods-LovFoodAdminTests-dummy.m */,
+				B5B911EA34F2B206668B6F061697F17A /* Pods-LovFoodAdminTests-frameworks.sh */,
+				41DA810FBCB7E6F27D6E8BB36CE01B2A /* Pods-LovFoodAdminTests-resources.sh */,
+				951A994DFF74AD534FFAF8F701DFC3AC /* Pods-LovFoodAdminTests-umbrella.h */,
+				8DD4AF354ED5A83AF4FFE1FE41FEAECD /* Pods-LovFoodAdminTests.debug.xcconfig */,
+				8759643F9974C9B3B7507D6932BFFCC8 /* Pods-LovFoodAdminTests.release.xcconfig */,
+			);
+			name = "Pods-LovFoodAdminTests";
+			path = "Target Support Files/Pods-LovFoodAdminTests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCE09D42006DAF8C572748336E33FF2D /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				ED95977A669984D9A1D4265992675740 /* Frameworks */,
+			);
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		C0EB6B9D509FDACF21C6699D1A63AED1 /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				74221A11F5559623FF3D423E6DCCB341 /* FIRInstanceID.h */,
+				D0DC1400A58B4FBDEC03D4DA33080DA1 /* Frameworks */,
+			);
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		C116C31BAE424153AD00D6BFFC07ED1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4ECCE3402153259021AF24C923F9DB31 /* GoogleUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D019297FC3F595D3EECFADA365A2C945 /* GoogleNetworkingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				D9872C8C9F7733E75624E2EFACAC9A3B /* Frameworks */,
+			);
+			path = GoogleNetworkingUtilities;
+			sourceTree = "<group>";
+		};
+		D0DC1400A58B4FBDEC03D4DA33080DA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C18A8BB696F3F1C10374471EA79B546 /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D47CA8DFCFF7253679320DBF87F6151A /* Pods-LovFoodAdminUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B1956E16C55CAD74DC3A661382B1A505 /* Info.plist */,
+				5AF47CE652B7595BE8047AC48260192C /* Pods-LovFoodAdminUITests.modulemap */,
+				E4673B5796D38B3D666E1AA032D096BF /* Pods-LovFoodAdminUITests-acknowledgements.markdown */,
+				FBFF982E6455778E411052C0C1A20006 /* Pods-LovFoodAdminUITests-acknowledgements.plist */,
+				ADCE249B7242930C47FD66EC03B064FE /* Pods-LovFoodAdminUITests-dummy.m */,
+				4D775ACD4422D4DEC0DC56735BBDE3DF /* Pods-LovFoodAdminUITests-frameworks.sh */,
+				A46525769923E80CA1C5F5E85F668803 /* Pods-LovFoodAdminUITests-resources.sh */,
+				565B360FBA0CE4ABF6998C9EEB0EC9FE /* Pods-LovFoodAdminUITests-umbrella.h */,
+				23D31B0D3FA223D007902B50C75E8CF5 /* Pods-LovFoodAdminUITests.debug.xcconfig */,
+				4B9973432FF69457E79F1FD053B7BDDF /* Pods-LovFoodAdminUITests.release.xcconfig */,
+			);
+			name = "Pods-LovFoodAdminUITests";
+			path = "Target Support Files/Pods-LovFoodAdminUITests";
+			sourceTree = "<group>";
+		};
+		D747591A8FEEFD8CD1042642C4C3A35F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				863D8178306DF5EA35115F54FE9DB8DC /* Firebase */,
+				2C152434E318BDFC6AAA4637635C92CB /* FirebaseAnalytics */,
+				E823C0D24FE746E423D1637619881E01 /* FirebaseAuth */,
+				BCE09D42006DAF8C572748336E33FF2D /* FirebaseDatabase */,
+				C0EB6B9D509FDACF21C6699D1A63AED1 /* FirebaseInstanceID */,
+				EA217487184645F1182E6A15A6593A6F /* FirebaseStorage */,
+				A6AD1E8361F23DD7FC20CF1F5F6193F0 /* GoogleInterchangeUtilities */,
+				D019297FC3F595D3EECFADA365A2C945 /* GoogleNetworkingUtilities */,
+				89C482C500CAC5298583C8F231C91FDB /* GoogleParsingUtilities */,
+				453639F77B3EB6B4CF18A5FD54CDAE71 /* GoogleSymbolUtilities */,
+				6260985D180B8FEB7FC63E1953C6BB6B /* GoogleUtilities */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D9872C8C9F7733E75624E2EFACAC9A3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28E068939D9EE20C8EF10B07D3E31F4C /* GoogleNetworkingUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E823C0D24FE746E423D1637619881E01 /* FirebaseAuth */ = {
+			isa = PBXGroup;
+			children = (
+				6580F1087CB9A5ADBF554447B2181AC5 /* Frameworks */,
+			);
+			path = FirebaseAuth;
+			sourceTree = "<group>";
+		};
+		EA217487184645F1182E6A15A6593A6F /* FirebaseStorage */ = {
+			isa = PBXGroup;
+			children = (
+				52DBBAC8136B72D335257521179F4002 /* Frameworks */,
+			);
+			path = FirebaseStorage;
+			sourceTree = "<group>";
+		};
+		ED95977A669984D9A1D4265992675740 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1815D2A3010404CD543E84C5268BCABC /* FirebaseDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4165ED857874553CD1CDC90E0ECC575 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63DDFEFC1970DD137BD9F7846F09ECAB /* GoogleParsingUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAA8C3D282D77CE1F8543E991899F207 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB5AE301239665AC1FC4C1867A46D2F7 /* Pods-LovFoodAdmin */,
+				BBBD0E7A3AFF37B82105C64FEAE48088 /* Pods-LovFoodAdminTests */,
+				D47CA8DFCFF7253679320DBF87F6151A /* Pods-LovFoodAdminUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1916BA94C337E0AB285C7917F2608110 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B9984020A1D1B713B9D96BDAFF22379 /* Pods-LovFoodAdmin-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A178B43D07397E61B5B882ECAE2450C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ECFD3701E86266BB9270198A9443795 /* Pods-LovFoodAdminUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDD35505F225292B659E0158E7EE3740 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65C658000A7D6E6B589B9F575711DCF7 /* Pods-LovFoodAdminTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CF29347CA4E0743F5F2770C656804D68 /* Pods-LovFoodAdminTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7871AA5D05057EE0B225E4586F558F8B /* Build configuration list for PBXNativeTarget "Pods-LovFoodAdminTests" */;
+			buildPhases = (
+				684142AE28EAAD1DF7E35596A9FF2147 /* Sources */,
+				33030E99C0A9877128D2D478D2738536 /* Frameworks */,
+				FDD35505F225292B659E0158E7EE3740 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-LovFoodAdminTests";
+			productName = "Pods-LovFoodAdminTests";
+			productReference = 5805B94F20AE709A488641EAF05D1EE8 /* Pods_LovFoodAdminTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D60A9DDBC4CB7974C97DFC6121F2C69E /* Pods-LovFoodAdminUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8F42D73CCAFDC4682D364CB3183015A /* Build configuration list for PBXNativeTarget "Pods-LovFoodAdminUITests" */;
+			buildPhases = (
+				F8D5A98D1E61EBB5BD8ED2381E525DD5 /* Sources */,
+				D1BF8DC4BF5ADDFF2BF9BA30CE33DF3B /* Frameworks */,
+				A178B43D07397E61B5B882ECAE2450C8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-LovFoodAdminUITests";
+			productName = "Pods-LovFoodAdminUITests";
+			productReference = B8562D84A7458BC7A6F3250E728A85DD /* Pods_LovFoodAdminUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F9BFFF2C68FD272560B6B673112D73BE /* Pods-LovFoodAdmin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E43285181E219D91349ECDDEE5D09A87 /* Build configuration list for PBXNativeTarget "Pods-LovFoodAdmin" */;
+			buildPhases = (
+				389FE6BAEFFF078262622958F3BE7A67 /* Sources */,
+				0A30068E41B7D8D3074D76A8A618756E /* Frameworks */,
+				1916BA94C337E0AB285C7917F2608110 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-LovFoodAdmin";
+			productName = "Pods-LovFoodAdmin";
+			productReference = B50D887E3390220C5B5C7DC84C847616 /* Pods_LovFoodAdmin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = BA21157E39E1A0C8952E8D3C7517EC20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9BFFF2C68FD272560B6B673112D73BE /* Pods-LovFoodAdmin */,
+				CF29347CA4E0743F5F2770C656804D68 /* Pods-LovFoodAdminTests */,
+				D60A9DDBC4CB7974C97DFC6121F2C69E /* Pods-LovFoodAdminUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		389FE6BAEFFF078262622958F3BE7A67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF1753E42894F931138E66FE64A5CE3 /* Pods-LovFoodAdmin-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		684142AE28EAAD1DF7E35596A9FF2147 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0BFE036B0A77E7B171BC0A6FE4F44BE /* Pods-LovFoodAdminTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D5A98D1E61EBB5BD8ED2381E525DD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7E3F42ED8744F3AAAD9A1A6A9F075CB /* Pods-LovFoodAdminUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2625E69A51CC8E5AD752BFBFF0B851B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DD4AF354ED5A83AF4FFE1FE41FEAECD /* Pods-LovFoodAdminTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LovFoodAdminTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LovFoodAdminTests/Pods-LovFoodAdminTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LovFoodAdminTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58F4E3BA41D3CA93AC027A725F379CA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8759643F9974C9B3B7507D6932BFFCC8 /* Pods-LovFoodAdminTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LovFoodAdminTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LovFoodAdminTests/Pods-LovFoodAdminTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LovFoodAdminTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8FA3A90DBE723E9F20061758F6884B7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 940332AF80FC18CA551A7B41B9C6A212 /* Pods-LovFoodAdmin.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LovFoodAdmin/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LovFoodAdmin/Pods-LovFoodAdmin.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LovFoodAdmin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E73449BD0B4C82870E3DF95375407F7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B9973432FF69457E79F1FD053B7BDDF /* Pods-LovFoodAdminUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LovFoodAdminUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LovFoodAdminUITests/Pods-LovFoodAdminUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LovFoodAdminUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EDBF0EEECF204CDE20DA22BCBFBA004E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4A8B490412B219C0B5B3F8A6B6BA7F0 /* Pods-LovFoodAdmin.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LovFoodAdmin/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LovFoodAdmin/Pods-LovFoodAdmin.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LovFoodAdmin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F30248EADFAEC36951DAE3CB36ECC14C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23D31B0D3FA223D007902B50C75E8CF5 /* Pods-LovFoodAdminUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LovFoodAdminUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LovFoodAdminUITests/Pods-LovFoodAdminUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LovFoodAdminUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
+				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7871AA5D05057EE0B225E4586F558F8B /* Build configuration list for PBXNativeTarget "Pods-LovFoodAdminTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2625E69A51CC8E5AD752BFBFF0B851B8 /* Debug */,
+				58F4E3BA41D3CA93AC027A725F379CA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8F42D73CCAFDC4682D364CB3183015A /* Build configuration list for PBXNativeTarget "Pods-LovFoodAdminUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F30248EADFAEC36951DAE3CB36ECC14C /* Debug */,
+				E73449BD0B4C82870E3DF95375407F7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E43285181E219D91349ECDDEE5D09A87 /* Build configuration list for PBXNativeTarget "Pods-LovFoodAdmin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FA3A90DBE723E9F20061758F6884B7A /* Debug */,
+				EDBF0EEECF204CDE20DA22BCBFBA004E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

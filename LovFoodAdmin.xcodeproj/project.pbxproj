@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1040215C1D7D9E26008B9712 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1040215B1D7D9E26008B9712 /* AppDelegate.swift */; };
+		1040215E1D7D9E26008B9712 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1040215D1D7D9E26008B9712 /* ViewController.swift */; };
+		104021611D7D9E26008B9712 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1040215F1D7D9E26008B9712 /* Main.storyboard */; };
+		104021631D7D9E26008B9712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 104021621D7D9E26008B9712 /* Assets.xcassets */; };
+		104021661D7D9E26008B9712 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 104021641D7D9E26008B9712 /* LaunchScreen.storyboard */; };
+		104021711D7D9E27008B9712 /* LovFoodAdminTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104021701D7D9E27008B9712 /* LovFoodAdminTests.swift */; };
+		1040217C1D7D9E27008B9712 /* LovFoodAdminUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1040217B1D7D9E27008B9712 /* LovFoodAdminUITests.swift */; };
+		1040218A1D7DA307008B9712 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 104021891D7DA307008B9712 /* GoogleService-Info.plist */; };
+		1040218C1D7DA79A008B9712 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1040218B1D7DA79A008B9712 /* ImageIO.framework */; };
+		9872FCCD1566F803445D6AEC /* Pods_LovFoodAdminTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C4A4C870AA17DF1564BE4F /* Pods_LovFoodAdminTests.framework */; };
+		B82BDF76EC7870DD321FF151 /* Pods_LovFoodAdminUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B4721B5D900FDEB70CD7B2 /* Pods_LovFoodAdminUITests.framework */; };
+		ECB2A0183422DA926781DE56 /* Pods_LovFoodAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1303262C8B76AC4507AE66B /* Pods_LovFoodAdmin.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1040216D1D7D9E27008B9712 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 104021501D7D9E26008B9712 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 104021571D7D9E26008B9712;
+			remoteInfo = LovFoodAdmin;
+		};
+		104021781D7D9E27008B9712 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 104021501D7D9E26008B9712 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 104021571D7D9E26008B9712;
+			remoteInfo = LovFoodAdmin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		104021581D7D9E26008B9712 /* LovFoodAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LovFoodAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1040215B1D7D9E26008B9712 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1040215D1D7D9E26008B9712 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		104021601D7D9E26008B9712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		104021621D7D9E26008B9712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		104021651D7D9E26008B9712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		104021671D7D9E26008B9712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1040216C1D7D9E27008B9712 /* LovFoodAdminTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LovFoodAdminTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		104021701D7D9E27008B9712 /* LovFoodAdminTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LovFoodAdminTests.swift; sourceTree = "<group>"; };
+		104021721D7D9E27008B9712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		104021771D7D9E27008B9712 /* LovFoodAdminUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LovFoodAdminUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1040217B1D7D9E27008B9712 /* LovFoodAdminUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LovFoodAdminUITests.swift; sourceTree = "<group>"; };
+		1040217D1D7D9E27008B9712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		104021891D7DA307008B9712 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1040218B1D7DA79A008B9712 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		14B4721B5D900FDEB70CD7B2 /* Pods_LovFoodAdminUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LovFoodAdminUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2771A613C29BC99E02FA9391 /* Pods-LovFoodAdminUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LovFoodAdminUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LovFoodAdminUITests/Pods-LovFoodAdminUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3001FE441535190697BB1F45 /* Pods-LovFoodAdminTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LovFoodAdminTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LovFoodAdminTests/Pods-LovFoodAdminTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3EAFDEF2755A85B5BAFD6E11 /* Pods-LovFoodAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LovFoodAdmin.release.xcconfig"; path = "Pods/Target Support Files/Pods-LovFoodAdmin/Pods-LovFoodAdmin.release.xcconfig"; sourceTree = "<group>"; };
+		A8451E6100D126816B164BBB /* Pods-LovFoodAdmin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LovFoodAdmin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LovFoodAdmin/Pods-LovFoodAdmin.debug.xcconfig"; sourceTree = "<group>"; };
+		C9C4A4C870AA17DF1564BE4F /* Pods_LovFoodAdminTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LovFoodAdminTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E32AD2EF3FB2BBF063D17F7B /* Pods-LovFoodAdminUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LovFoodAdminUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LovFoodAdminUITests/Pods-LovFoodAdminUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F1303262C8B76AC4507AE66B /* Pods_LovFoodAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LovFoodAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72886C2DC97D842CE5C22DE /* Pods-LovFoodAdminTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LovFoodAdminTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LovFoodAdminTests/Pods-LovFoodAdminTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		104021551D7D9E26008B9712 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1040218C1D7DA79A008B9712 /* ImageIO.framework in Frameworks */,
+				ECB2A0183422DA926781DE56 /* Pods_LovFoodAdmin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		104021691D7D9E27008B9712 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9872FCCD1566F803445D6AEC /* Pods_LovFoodAdminTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		104021741D7D9E27008B9712 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B82BDF76EC7870DD321FF151 /* Pods_LovFoodAdminUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1040214F1D7D9E26008B9712 = {
+			isa = PBXGroup;
+			children = (
+				1040215A1D7D9E26008B9712 /* LovFoodAdmin */,
+				1040216F1D7D9E27008B9712 /* LovFoodAdminTests */,
+				1040217A1D7D9E27008B9712 /* LovFoodAdminUITests */,
+				104021591D7D9E26008B9712 /* Products */,
+				C6BDE8C8644237FDB0620CC6 /* Pods */,
+				E62506502761DAE2EE43E522 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		104021591D7D9E26008B9712 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				104021581D7D9E26008B9712 /* LovFoodAdmin.app */,
+				1040216C1D7D9E27008B9712 /* LovFoodAdminTests.xctest */,
+				104021771D7D9E27008B9712 /* LovFoodAdminUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1040215A1D7D9E26008B9712 /* LovFoodAdmin */ = {
+			isa = PBXGroup;
+			children = (
+				1040215B1D7D9E26008B9712 /* AppDelegate.swift */,
+				1040215D1D7D9E26008B9712 /* ViewController.swift */,
+				1040215F1D7D9E26008B9712 /* Main.storyboard */,
+				104021621D7D9E26008B9712 /* Assets.xcassets */,
+				104021641D7D9E26008B9712 /* LaunchScreen.storyboard */,
+				104021671D7D9E26008B9712 /* Info.plist */,
+				104021891D7DA307008B9712 /* GoogleService-Info.plist */,
+			);
+			path = LovFoodAdmin;
+			sourceTree = "<group>";
+		};
+		1040216F1D7D9E27008B9712 /* LovFoodAdminTests */ = {
+			isa = PBXGroup;
+			children = (
+				104021701D7D9E27008B9712 /* LovFoodAdminTests.swift */,
+				104021721D7D9E27008B9712 /* Info.plist */,
+			);
+			path = LovFoodAdminTests;
+			sourceTree = "<group>";
+		};
+		1040217A1D7D9E27008B9712 /* LovFoodAdminUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1040217B1D7D9E27008B9712 /* LovFoodAdminUITests.swift */,
+				1040217D1D7D9E27008B9712 /* Info.plist */,
+			);
+			path = LovFoodAdminUITests;
+			sourceTree = "<group>";
+		};
+		C6BDE8C8644237FDB0620CC6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8451E6100D126816B164BBB /* Pods-LovFoodAdmin.debug.xcconfig */,
+				3EAFDEF2755A85B5BAFD6E11 /* Pods-LovFoodAdmin.release.xcconfig */,
+				3001FE441535190697BB1F45 /* Pods-LovFoodAdminTests.debug.xcconfig */,
+				F72886C2DC97D842CE5C22DE /* Pods-LovFoodAdminTests.release.xcconfig */,
+				2771A613C29BC99E02FA9391 /* Pods-LovFoodAdminUITests.debug.xcconfig */,
+				E32AD2EF3FB2BBF063D17F7B /* Pods-LovFoodAdminUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E62506502761DAE2EE43E522 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1040218B1D7DA79A008B9712 /* ImageIO.framework */,
+				F1303262C8B76AC4507AE66B /* Pods_LovFoodAdmin.framework */,
+				C9C4A4C870AA17DF1564BE4F /* Pods_LovFoodAdminTests.framework */,
+				14B4721B5D900FDEB70CD7B2 /* Pods_LovFoodAdminUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		104021571D7D9E26008B9712 /* LovFoodAdmin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 104021801D7D9E27008B9712 /* Build configuration list for PBXNativeTarget "LovFoodAdmin" */;
+			buildPhases = (
+				728F21040AEA2EC240512881 /* 📦 Check Pods Manifest.lock */,
+				104021541D7D9E26008B9712 /* Sources */,
+				104021551D7D9E26008B9712 /* Frameworks */,
+				104021561D7D9E26008B9712 /* Resources */,
+				A74DE0DB9F7B0E1CA8BB36C1 /* 📦 Embed Pods Frameworks */,
+				26B6D576B7F467E849D2B38F /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LovFoodAdmin;
+			productName = LovFoodAdmin;
+			productReference = 104021581D7D9E26008B9712 /* LovFoodAdmin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1040216B1D7D9E27008B9712 /* LovFoodAdminTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 104021831D7D9E27008B9712 /* Build configuration list for PBXNativeTarget "LovFoodAdminTests" */;
+			buildPhases = (
+				969BA60EFB56C93F3311A255 /* 📦 Check Pods Manifest.lock */,
+				104021681D7D9E27008B9712 /* Sources */,
+				104021691D7D9E27008B9712 /* Frameworks */,
+				1040216A1D7D9E27008B9712 /* Resources */,
+				1DF98CB2466B90C12CF9A0A6 /* 📦 Embed Pods Frameworks */,
+				6193571269CA87F5AD58A347 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1040216E1D7D9E27008B9712 /* PBXTargetDependency */,
+			);
+			name = LovFoodAdminTests;
+			productName = LovFoodAdminTests;
+			productReference = 1040216C1D7D9E27008B9712 /* LovFoodAdminTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		104021761D7D9E27008B9712 /* LovFoodAdminUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 104021861D7D9E27008B9712 /* Build configuration list for PBXNativeTarget "LovFoodAdminUITests" */;
+			buildPhases = (
+				558C2190E7E3304EB4201FC0 /* 📦 Check Pods Manifest.lock */,
+				104021731D7D9E27008B9712 /* Sources */,
+				104021741D7D9E27008B9712 /* Frameworks */,
+				104021751D7D9E27008B9712 /* Resources */,
+				2CFFA8ABCEC61F2B161EDCAC /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				104021791D7D9E27008B9712 /* PBXTargetDependency */,
+			);
+			name = LovFoodAdminUITests;
+			productName = LovFoodAdminUITests;
+			productReference = 104021771D7D9E27008B9712 /* LovFoodAdminUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		104021501D7D9E26008B9712 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Nikolai Kratz";
+				TargetAttributes = {
+					104021571D7D9E26008B9712 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					1040216B1D7D9E27008B9712 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 104021571D7D9E26008B9712;
+					};
+					104021761D7D9E27008B9712 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 104021571D7D9E26008B9712;
+					};
+				};
+			};
+			buildConfigurationList = 104021531D7D9E26008B9712 /* Build configuration list for PBXProject "LovFoodAdmin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1040214F1D7D9E26008B9712;
+			productRefGroup = 104021591D7D9E26008B9712 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				104021571D7D9E26008B9712 /* LovFoodAdmin */,
+				1040216B1D7D9E27008B9712 /* LovFoodAdminTests */,
+				104021761D7D9E27008B9712 /* LovFoodAdminUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		104021561D7D9E26008B9712 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104021661D7D9E26008B9712 /* LaunchScreen.storyboard in Resources */,
+				1040218A1D7DA307008B9712 /* GoogleService-Info.plist in Resources */,
+				104021631D7D9E26008B9712 /* Assets.xcassets in Resources */,
+				104021611D7D9E26008B9712 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1040216A1D7D9E27008B9712 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		104021751D7D9E27008B9712 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DF98CB2466B90C12CF9A0A6 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LovFoodAdminTests/Pods-LovFoodAdminTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26B6D576B7F467E849D2B38F /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LovFoodAdmin/Pods-LovFoodAdmin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CFFA8ABCEC61F2B161EDCAC /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LovFoodAdminUITests/Pods-LovFoodAdminUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		558C2190E7E3304EB4201FC0 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6193571269CA87F5AD58A347 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LovFoodAdminTests/Pods-LovFoodAdminTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		728F21040AEA2EC240512881 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		969BA60EFB56C93F3311A255 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A74DE0DB9F7B0E1CA8BB36C1 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LovFoodAdmin/Pods-LovFoodAdmin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		104021541D7D9E26008B9712 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1040215E1D7D9E26008B9712 /* ViewController.swift in Sources */,
+				1040215C1D7D9E26008B9712 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		104021681D7D9E27008B9712 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104021711D7D9E27008B9712 /* LovFoodAdminTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		104021731D7D9E27008B9712 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1040217C1D7D9E27008B9712 /* LovFoodAdminUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1040216E1D7D9E27008B9712 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 104021571D7D9E26008B9712 /* LovFoodAdmin */;
+			targetProxy = 1040216D1D7D9E27008B9712 /* PBXContainerItemProxy */;
+		};
+		104021791D7D9E27008B9712 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 104021571D7D9E26008B9712 /* LovFoodAdmin */;
+			targetProxy = 104021781D7D9E27008B9712 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1040215F1D7D9E26008B9712 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				104021601D7D9E26008B9712 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		104021641D7D9E26008B9712 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				104021651D7D9E26008B9712 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1040217E1D7D9E27008B9712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1040217F1D7D9E27008B9712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		104021811D7D9E27008B9712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8451E6100D126816B164BBB /* Pods-LovFoodAdmin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LovFoodAdmin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolaikratz.LovFoodAdmin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		104021821D7D9E27008B9712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EAFDEF2755A85B5BAFD6E11 /* Pods-LovFoodAdmin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LovFoodAdmin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolaikratz.LovFoodAdmin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		104021841D7D9E27008B9712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3001FE441535190697BB1F45 /* Pods-LovFoodAdminTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LovFoodAdminTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolaikratz.LovFoodAdminTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LovFoodAdmin.app/LovFoodAdmin";
+			};
+			name = Debug;
+		};
+		104021851D7D9E27008B9712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F72886C2DC97D842CE5C22DE /* Pods-LovFoodAdminTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LovFoodAdminTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolaikratz.LovFoodAdminTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LovFoodAdmin.app/LovFoodAdmin";
+			};
+			name = Release;
+		};
+		104021871D7D9E27008B9712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2771A613C29BC99E02FA9391 /* Pods-LovFoodAdminUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = LovFoodAdminUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolaikratz.LovFoodAdminUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LovFoodAdmin;
+			};
+			name = Debug;
+		};
+		104021881D7D9E27008B9712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E32AD2EF3FB2BBF063D17F7B /* Pods-LovFoodAdminUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = LovFoodAdminUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolaikratz.LovFoodAdminUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LovFoodAdmin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		104021531D7D9E26008B9712 /* Build configuration list for PBXProject "LovFoodAdmin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1040217E1D7D9E27008B9712 /* Debug */,
+				1040217F1D7D9E27008B9712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		104021801D7D9E27008B9712 /* Build configuration list for PBXNativeTarget "LovFoodAdmin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				104021811D7D9E27008B9712 /* Debug */,
+				104021821D7D9E27008B9712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		104021831D7D9E27008B9712 /* Build configuration list for PBXNativeTarget "LovFoodAdminTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				104021841D7D9E27008B9712 /* Debug */,
+				104021851D7D9E27008B9712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		104021861D7D9E27008B9712 /* Build configuration list for PBXNativeTarget "LovFoodAdminUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				104021871D7D9E27008B9712 /* Debug */,
+				104021881D7D9E27008B9712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 104021501D7D9E26008B9712 /* Project object */;
+}

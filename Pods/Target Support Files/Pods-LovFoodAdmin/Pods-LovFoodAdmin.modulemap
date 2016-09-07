@@ -1,0 +1,6 @@
+framework module Pods_LovFoodAdmin {
+  umbrella header "Pods-LovFoodAdmin-umbrella.h"
+
+  export *
+  module * { export * }
+}
