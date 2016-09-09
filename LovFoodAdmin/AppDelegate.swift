@@ -8,11 +8,17 @@
 
 import UIKit
 import Firebase
+import GeoFire
 
 
 public let ref = FIRDatabase.database().reference()
 public let storage = FIRStorage.storage()
 public let storageRef = storage.reference()
+public var geofireRef = ref.child("geoFire")
+public var geoFire = GeoFire(firebaseRef: geofireRef)
+
+public var lovFoodColor = UIColor(red: 237/255, green: 52/255, blue: 81/255, alpha: 1)
+public var lovFoodSecondaryColor = UIColor(red: 249/255, green: 247/255, blue: 244/255, alpha: 1)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        window?.tintColor = lovFoodColor
+        
         // Use Firebase library to configure APIs
         FIRApp.configure()
         FIRAuth.auth()?.signInAnonymouslyWithCompletion() { (user, error) in

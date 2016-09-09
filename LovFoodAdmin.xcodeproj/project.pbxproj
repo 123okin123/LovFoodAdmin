@@ -16,6 +16,10 @@
 		1040217C1D7D9E27008B9712 /* LovFoodAdminUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1040217B1D7D9E27008B9712 /* LovFoodAdminUITests.swift */; };
 		1040218A1D7DA307008B9712 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 104021891D7DA307008B9712 /* GoogleService-Info.plist */; };
 		1040218C1D7DA79A008B9712 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1040218B1D7DA79A008B9712 /* ImageIO.framework */; };
+		10A043981D81BB4600538C08 /* AllEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A043971D81BB4600538C08 /* AllEventsViewController.swift */; };
+		10A0439A1D81BC4600538C08 /* CookingEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A043991D81BC4600538C08 /* CookingEvent.swift */; };
+		10A0439C1D81BC8600538C08 /* CookingProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A0439B1D81BC8600538C08 /* CookingProfile.swift */; };
+		10A0439E1D81C4B200538C08 /* CookingEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A0439D1D81C4B200538C08 /* CookingEventCell.swift */; };
 		9872FCCD1566F803445D6AEC /* Pods_LovFoodAdminTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C4A4C870AA17DF1564BE4F /* Pods_LovFoodAdminTests.framework */; };
 		B82BDF76EC7870DD321FF151 /* Pods_LovFoodAdminUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B4721B5D900FDEB70CD7B2 /* Pods_LovFoodAdminUITests.framework */; };
 		ECB2A0183422DA926781DE56 /* Pods_LovFoodAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1303262C8B76AC4507AE66B /* Pods_LovFoodAdmin.framework */; };
@@ -54,6 +58,10 @@
 		1040217D1D7D9E27008B9712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		104021891D7DA307008B9712 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1040218B1D7DA79A008B9712 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		10A043971D81BB4600538C08 /* AllEventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllEventsViewController.swift; sourceTree = "<group>"; };
+		10A043991D81BC4600538C08 /* CookingEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookingEvent.swift; sourceTree = "<group>"; };
+		10A0439B1D81BC8600538C08 /* CookingProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookingProfile.swift; sourceTree = "<group>"; };
+		10A0439D1D81C4B200538C08 /* CookingEventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookingEventCell.swift; sourceTree = "<group>"; };
 		14B4721B5D900FDEB70CD7B2 /* Pods_LovFoodAdminUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LovFoodAdminUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2771A613C29BC99E02FA9391 /* Pods-LovFoodAdminUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LovFoodAdminUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LovFoodAdminUITests/Pods-LovFoodAdminUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3001FE441535190697BB1F45 /* Pods-LovFoodAdminTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LovFoodAdminTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LovFoodAdminTests/Pods-LovFoodAdminTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,8 +128,12 @@
 			isa = PBXGroup;
 			children = (
 				1040215B1D7D9E26008B9712 /* AppDelegate.swift */,
-				1040215D1D7D9E26008B9712 /* ViewController.swift */,
 				1040215F1D7D9E26008B9712 /* Main.storyboard */,
+				10A0439D1D81C4B200538C08 /* CookingEventCell.swift */,
+				1040215D1D7D9E26008B9712 /* ViewController.swift */,
+				10A043971D81BB4600538C08 /* AllEventsViewController.swift */,
+				10A043991D81BC4600538C08 /* CookingEvent.swift */,
+				10A0439B1D81BC8600538C08 /* CookingProfile.swift */,
 				104021621D7D9E26008B9712 /* Assets.xcassets */,
 				104021641D7D9E26008B9712 /* LaunchScreen.storyboard */,
 				104021671D7D9E26008B9712 /* Info.plist */,
@@ -435,6 +447,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10A0439C1D81BC8600538C08 /* CookingProfile.swift in Sources */,
+				10A043981D81BB4600538C08 /* AllEventsViewController.swift in Sources */,
+				10A0439A1D81BC4600538C08 /* CookingEvent.swift in Sources */,
+				10A0439E1D81C4B200538C08 /* CookingEventCell.swift in Sources */,
 				1040215E1D7D9E26008B9712 /* ViewController.swift in Sources */,
 				1040215C1D7D9E26008B9712 /* AppDelegate.swift in Sources */,
 			);

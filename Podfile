@@ -10,6 +10,7 @@ target 'LovFoodAdmin' do
     pod 'Firebase/Auth'
     pod 'Firebase/Database'
     pod 'Firebase/Storage'
+    pod 'GeoFire', :path => '/Users/nikolaikratz/Dropbox/Xcode/LovFood/geofire-objc-master'
 
   target 'LovFoodAdminTests' do
     inherit! :search_paths

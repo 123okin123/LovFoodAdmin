@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5D5BBBE0B1BFFC378CFAD909F6B0DB998F124767",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5D5BBBE0B1BFFC378CFAD909F6B0DB998F124767" : 0,
+    "404602E83321D1DFD90A75BA0153811E915678D2" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F69BE169-BAA5-46B1-AD4B-4D10E1F40FEB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5D5BBBE0B1BFFC378CFAD909F6B0DB998F124767" : "LovFoodAdmin\/",
+    "404602E83321D1DFD90A75BA0153811E915678D2" : "..\/LovFood"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LovFoodAdmin",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LovFoodAdmin.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/123okin123\/lovfood_iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "404602E83321D1DFD90A75BA0153811E915678D2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/123okin123\/LovFoodAdmin.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5D5BBBE0B1BFFC378CFAD909F6B0DB998F124767"
+    }
+  ]
+}
