@@ -9,7 +9,7 @@
 import UIKit
 
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class UploadViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var imageView: UIImageView!
     var imageToUpload :UIImage?
@@ -38,34 +38,44 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let eventImagesStorageRef = storageRef.child("eventImages/full/\(eventImageDBRef.key)")
         
         
-        thumbEventImagesStorageRef.putData(thumbImageData, metadata: nil) { metadata, error in
-            if (error != nil) {
-                // Uh-oh, an error occurred!
-                print(error)
-            } else {
-                
-                let downloadURL = metadata!.downloadURL()
-                // Load Info in DB
-                let imageValues = [
-                    "thumb_url" : String(downloadURL!),
-                    "thumb_Storage_uri" : String(thumbEventImagesStorageRef)
-                ]
-                eventImageDBRef.updateChildValues(imageValues)
-            }
-        }
+       
         eventImagesStorageRef.putData(imageData, metadata: nil) { metadata, error in
             if (error != nil) {
                 // Uh-oh, an error occurred!
-                print(error)
+                self.showAlertWith("Error", message: error!.localizedDescription)
             } else {
-                
-                let downloadURL = metadata!.downloadURL()
-                // Load Info in DB
-                let imageValues = [
-                    "full_url" : String(downloadURL!),
+                let fullImageValues = [
+                    "full_url" : String(metadata!.downloadURL()!),
                     "full_Storage_uri" : String(eventImagesStorageRef)
                 ]
-                eventImageDBRef.updateChildValues(imageValues)
+                
+
+                thumbEventImagesStorageRef.putData(thumbImageData, metadata: nil) { metadata, error in
+                    if (error != nil) {
+                        // Uh-oh, an error occurred!
+                        self.showAlertWith("Error", message: error!.localizedDescription)
+                    } else {
+                        // Load Info in DB
+                        var thumbImageValues = [
+                            "thumb_url" : String(metadata!.downloadURL()!),
+                            "thumb_Storage_uri" : String(thumbEventImagesStorageRef)
+                        ]
+                        thumbImageValues.update(fullImageValues)
+                       
+                        
+                        eventImageDBRef.updateChildValues(thumbImageValues)
+                        eventImageDBRef.updateChildValues(thumbImageValues, withCompletionBlock: { (error, ref) in
+                            if (error != nil) {
+                            self.showAlertWith("Error", message: error!.localizedDescription)
+                            } else {
+                            self.showAlertWith("Done", message: "Upload finished!")
+                            }
+                        })
+                       
+                    }
+                }
+
+                
             }
         }
         
@@ -113,6 +123,28 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         return newImage
     }
+    
+    
+    func showAlertWith(title: String, message: String) {
+        
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+        let OKAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        alertController.addAction(OKAction)
+        self.presentViewController(alertController, animated: true, completion:  nil)
+    }
+    
+    
 
 }
 
+
+
+
+
+extension Dictionary {
+    mutating func update(other:Dictionary) {
+        for (key,value) in other {
+            self.updateValue(value, forKey:key)
+        }
+    }
+}

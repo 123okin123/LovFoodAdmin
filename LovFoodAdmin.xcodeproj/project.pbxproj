@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1040215C1D7D9E26008B9712 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1040215B1D7D9E26008B9712 /* AppDelegate.swift */; };
-		1040215E1D7D9E26008B9712 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1040215D1D7D9E26008B9712 /* ViewController.swift */; };
+		1040215E1D7D9E26008B9712 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1040215D1D7D9E26008B9712 /* UploadViewController.swift */; };
 		104021611D7D9E26008B9712 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1040215F1D7D9E26008B9712 /* Main.storyboard */; };
 		104021631D7D9E26008B9712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 104021621D7D9E26008B9712 /* Assets.xcassets */; };
 		104021661D7D9E26008B9712 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 104021641D7D9E26008B9712 /* LaunchScreen.storyboard */; };
@@ -16,6 +16,9 @@
 		1040217C1D7D9E27008B9712 /* LovFoodAdminUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1040217B1D7D9E27008B9712 /* LovFoodAdminUITests.swift */; };
 		1040218A1D7DA307008B9712 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 104021891D7DA307008B9712 /* GoogleService-Info.plist */; };
 		1040218C1D7DA79A008B9712 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1040218B1D7DA79A008B9712 /* ImageIO.framework */; };
+		107C7BE31D82E5940098C2C6 /* EventImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C7BE21D82E5940098C2C6 /* EventImagesViewController.swift */; };
+		107C7BE51D82E5FA0098C2C6 /* EventImageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C7BE41D82E5FA0098C2C6 /* EventImageObject.swift */; };
+		107C7BE71D82E6400098C2C6 /* EventImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C7BE61D82E6400098C2C6 /* EventImageCell.swift */; };
 		10A043981D81BB4600538C08 /* AllEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A043971D81BB4600538C08 /* AllEventsViewController.swift */; };
 		10A0439A1D81BC4600538C08 /* CookingEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A043991D81BC4600538C08 /* CookingEvent.swift */; };
 		10A0439C1D81BC8600538C08 /* CookingProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A0439B1D81BC8600538C08 /* CookingProfile.swift */; };
@@ -45,7 +48,7 @@
 /* Begin PBXFileReference section */
 		104021581D7D9E26008B9712 /* LovFoodAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LovFoodAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1040215B1D7D9E26008B9712 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1040215D1D7D9E26008B9712 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1040215D1D7D9E26008B9712 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		104021601D7D9E26008B9712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		104021621D7D9E26008B9712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		104021651D7D9E26008B9712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +61,9 @@
 		1040217D1D7D9E27008B9712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		104021891D7DA307008B9712 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1040218B1D7DA79A008B9712 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		107C7BE21D82E5940098C2C6 /* EventImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventImagesViewController.swift; sourceTree = "<group>"; };
+		107C7BE41D82E5FA0098C2C6 /* EventImageObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventImageObject.swift; sourceTree = "<group>"; };
+		107C7BE61D82E6400098C2C6 /* EventImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventImageCell.swift; sourceTree = "<group>"; };
 		10A043971D81BB4600538C08 /* AllEventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllEventsViewController.swift; sourceTree = "<group>"; };
 		10A043991D81BC4600538C08 /* CookingEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookingEvent.swift; sourceTree = "<group>"; };
 		10A0439B1D81BC8600538C08 /* CookingProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookingProfile.swift; sourceTree = "<group>"; };
@@ -129,9 +135,12 @@
 			children = (
 				1040215B1D7D9E26008B9712 /* AppDelegate.swift */,
 				1040215F1D7D9E26008B9712 /* Main.storyboard */,
-				10A0439D1D81C4B200538C08 /* CookingEventCell.swift */,
-				1040215D1D7D9E26008B9712 /* ViewController.swift */,
+				107C7BE61D82E6400098C2C6 /* EventImageCell.swift */,
+				107C7BE41D82E5FA0098C2C6 /* EventImageObject.swift */,
+				1040215D1D7D9E26008B9712 /* UploadViewController.swift */,
+				107C7BE21D82E5940098C2C6 /* EventImagesViewController.swift */,
 				10A043971D81BB4600538C08 /* AllEventsViewController.swift */,
+				10A0439D1D81C4B200538C08 /* CookingEventCell.swift */,
 				10A043991D81BC4600538C08 /* CookingEvent.swift */,
 				10A0439B1D81BC8600538C08 /* CookingProfile.swift */,
 				104021621D7D9E26008B9712 /* Assets.xcassets */,
@@ -448,10 +457,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				10A0439C1D81BC8600538C08 /* CookingProfile.swift in Sources */,
+				107C7BE31D82E5940098C2C6 /* EventImagesViewController.swift in Sources */,
 				10A043981D81BB4600538C08 /* AllEventsViewController.swift in Sources */,
 				10A0439A1D81BC4600538C08 /* CookingEvent.swift in Sources */,
 				10A0439E1D81C4B200538C08 /* CookingEventCell.swift in Sources */,
-				1040215E1D7D9E26008B9712 /* ViewController.swift in Sources */,
+				107C7BE71D82E6400098C2C6 /* EventImageCell.swift in Sources */,
+				107C7BE51D82E5FA0098C2C6 /* EventImageObject.swift in Sources */,
+				1040215E1D7D9E26008B9712 /* UploadViewController.swift in Sources */,
 				1040215C1D7D9E26008B9712 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

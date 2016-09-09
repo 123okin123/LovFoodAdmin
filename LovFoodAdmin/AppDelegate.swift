@@ -19,6 +19,11 @@ public var geoFire = GeoFire(firebaseRef: geofireRef)
 
 public var lovFoodColor = UIColor(red: 237/255, green: 52/255, blue: 81/255, alpha: 1)
 public var lovFoodSecondaryColor = UIColor(red: 249/255, green: 247/255, blue: 244/255, alpha: 1)
+public var screenwidth = UIScreen.mainScreen().bounds.size.width
+public var screenheight = UIScreen.mainScreen().bounds.size.height
+
+
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

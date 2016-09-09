@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="1859" y="-350"/>
         </scene>
-        <!--Upload Images-->
+        <!--Upload View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LovFoodAdmin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="UploadViewController" customModule="LovFoodAdmin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -89,8 +89,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vW-jt-tm9">
+                                <rect key="frame" x="273" y="344" width="55" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Upload"/>
+                                <connections>
+                                    <action selector="uploadButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kgh-6X-5lk"/>
+                                </connections>
+                            </button>
                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Nx-HI-ceV">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="250"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -100,14 +108,6 @@
                                     <outletCollection property="gestureRecognizers" destination="rOV-w6-gVj" appends="YES" id="1fZ-6z-qil"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vW-jt-tm9">
-                                <rect key="frame" x="273" y="280" width="55" height="33"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Upload"/>
-                                <connections>
-                                    <action selector="uploadButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kgh-6X-5lk"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -115,22 +115,29 @@
                             <constraint firstAttribute="trailingMargin" secondItem="7Nx-HI-ceV" secondAttribute="trailing" constant="-20" id="KaC-0x-eMm"/>
                             <constraint firstItem="4vW-jt-tm9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ozd-d4-b1x"/>
                             <constraint firstItem="7Nx-HI-ceV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="i3t-Q6-zvQ"/>
-                            <constraint firstItem="7Nx-HI-ceV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="tOU-eF-Syw"/>
+                            <constraint firstItem="7Nx-HI-ceV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="64" id="tOU-eF-Syw"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Upload Images" id="tlX-ST-gAE"/>
+                    <navigationItem key="navigationItem" id="fAi-Th-n8q">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Kzc-XQ-Ylb">
+                            <connections>
+                                <segue destination="jOf-n0-QOL" kind="unwind" unwindAction="backFromUploadImage:" id="cJU-g6-o3r"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="7Nx-HI-ceV" id="9jO-sT-bvs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="jOf-n0-QOL" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="rOV-w6-gVj">
                     <connections>
                         <action selector="imagePressed:" destination="BYZ-38-t0r" id="hjJ-tx-NXE"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1057" y="305"/>
+            <point key="canvasLocation" x="3435" y="457"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="5fK-Oo-bzq">
@@ -142,8 +149,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="052-rb-aTY"/>
                         <segue destination="mtB-kD-CP7" kind="relationship" relationship="viewControllers" id="Izv-UJ-svM"/>
+                        <segue destination="9ob-mP-Xbm" kind="relationship" relationship="viewControllers" id="Br8-ba-XZD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1lO-ng-cil" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -168,6 +175,108 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="poN-Ur-hRA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047" y="-350"/>
+        </scene>
+        <!--Event Images View Controller-->
+        <scene sceneID="TLj-u4-nYe">
+            <objects>
+                <collectionViewController id="aj3-8o-Ko8" customClass="EventImagesViewController" customModule="LovFoodAdmin" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" id="Qqo-bB-tei">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jIX-4V-Twf">
+                            <size key="itemSize" width="150" height="137"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCellID" id="OgC-eh-Mkc" customClass="EventImageCell" customModule="LovFoodAdmin" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="150" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="137"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1cm-54-ZXL">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="137"/>
+                                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxA-oB-fhu">
+                                            <rect key="frame" x="97" y="8" width="45" height="30"/>
+                                            <state key="normal" title="Delete"/>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="jxA-oB-fhu" firstAttribute="top" secondItem="OgC-eh-Mkc" secondAttribute="topMargin" id="15J-Ju-XOU"/>
+                                    <constraint firstItem="1cm-54-ZXL" firstAttribute="top" secondItem="OgC-eh-Mkc" secondAttribute="topMargin" constant="-8" id="Ge0-be-1ez"/>
+                                    <constraint firstItem="jxA-oB-fhu" firstAttribute="trailing" secondItem="OgC-eh-Mkc" secondAttribute="trailingMargin" id="RAK-ms-d3r"/>
+                                    <constraint firstItem="1cm-54-ZXL" firstAttribute="leading" secondItem="OgC-eh-Mkc" secondAttribute="leadingMargin" constant="-8" id="ZYO-GE-RB5"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="1cm-54-ZXL" secondAttribute="trailing" constant="-8" id="jC9-P6-ikF"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="1cm-54-ZXL" secondAttribute="bottom" constant="-8" id="uOS-Rh-Rmd"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="1cm-54-ZXL" id="0xc-ob-T3p"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="aj3-8o-Ko8" id="GH8-SY-paa"/>
+                            <outlet property="delegate" destination="aj3-8o-Ko8" id="1wV-DZ-uzD"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="UNH-f2-J5J">
+                        <barButtonItem key="rightBarButtonItem" title="upload Photo" id="QrX-wv-1rk">
+                            <connections>
+                                <segue destination="fr0-7f-hH6" kind="presentation" id="b6u-ox-f5g"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4jP-we-4eC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1771" y="457"/>
+        </scene>
+        <!--Event Images-->
+        <scene sceneID="ck0-70-UEU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9ob-mP-Xbm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Event Images" id="lvV-Ss-kHM"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Ae-o8-Wqm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aj3-8o-Ko8" kind="relationship" relationship="rootViewController" id="c6f-e7-POd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yg5-YZ-vZI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="959" y="457"/>
+        </scene>
+        <!--Upload Images-->
+        <scene sceneID="7mw-Zi-Z5W">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fr0-7f-hH6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Upload Images" id="tlX-ST-gAE"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PmF-mC-jmc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zhP-oI-PHl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wew-fN-x3h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2623" y="457"/>
         </scene>
     </scenes>
 </document>
