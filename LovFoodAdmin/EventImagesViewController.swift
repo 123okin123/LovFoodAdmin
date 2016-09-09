@@ -26,7 +26,7 @@ class EventImagesViewController: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
         
         dbQuery = ref.child("eventImages")
-        
+        addDatabaseObserver()
         // Do any additional setup after loading the view.
     }
     
@@ -37,19 +37,17 @@ class EventImagesViewController: UICollectionViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        addDatabaseObserver()
+        
         
     }
     override func viewDidDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
-        dbQuery.removeAllObservers()
-        images.removeAll()
+
     }
     
     
     
     func addDatabaseObserver() {
-        print("ping")
         dbQuery.observeEventType(.ChildAdded, withBlock: { (snapshot) in
             let eventImageObject = EventImageObject(snapshot: snapshot)
             self.images.append(eventImageObject)

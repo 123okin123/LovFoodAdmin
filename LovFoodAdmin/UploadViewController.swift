@@ -7,13 +7,18 @@
 //
 
 import UIKit
+import Firebase
 
 
 class UploadViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    
+    @IBOutlet weak var thumbImageProgessBar: UIProgressView!
+    @IBOutlet weak var fullImageProgessBar: UIProgressView!
     @IBOutlet weak var imageView: UIImageView!
     var imageToUpload :UIImage?
     var thumbImageToUpload:UIImage?
+    
+    var fullImageUploadTask :FIRStorageUploadTask!
+    var thumbImageUploadTask :FIRStorageUploadTask!
     
     let imagePicker = UIImagePickerController()
    
@@ -27,6 +32,9 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     @IBAction func uploadButtonPressed(sender: UIButton) {
         
+        
+        
+        
         // Load in DB
         let eventImageDBRef = ref.child("eventImages").childByAutoId()
 
@@ -39,9 +47,9 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         
        
-        eventImagesStorageRef.putData(imageData, metadata: nil) { metadata, error in
+         fullImageUploadTask = eventImagesStorageRef.putData(imageData, metadata: nil) { metadata, error in
             if (error != nil) {
-                // Uh-oh, an error occurred!
+            // Uh-oh, an error occurred!
                 self.showAlertWith("Error", message: error!.localizedDescription)
             } else {
                 let fullImageValues = [
@@ -50,7 +58,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
                 ]
                 
 
-                thumbEventImagesStorageRef.putData(thumbImageData, metadata: nil) { metadata, error in
+                self.thumbImageUploadTask = thumbEventImagesStorageRef.putData(thumbImageData, metadata: nil) { metadata, error in
                     if (error != nil) {
                         // Uh-oh, an error occurred!
                         self.showAlertWith("Error", message: error!.localizedDescription)
@@ -69,16 +77,32 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
                             self.showAlertWith("Error", message: error!.localizedDescription)
                             } else {
                             self.showAlertWith("Done", message: "Upload finished!")
+                                self.fullImageUploadTask.removeAllObservers()
+                                self.thumbImageUploadTask.removeAllObservers()
                             }
                         })
                        
                     }
                 }
-
+                self.thumbImageUploadTask.observeStatus(.Progress) { snapshot in
+                    // A progress event occurred
+                    if let progress = snapshot.progress {
+                        let percentComplete :Float = 100.0 * Float(progress.completedUnitCount) / Float(progress.totalUnitCount)
+                        self.thumbImageProgessBar.progress = percentComplete
+                    }
+                }
                 
             }
         }
         
+        fullImageUploadTask.observeStatus(.Progress) { snapshot in
+            // A progress event occurred
+            if let progress = snapshot.progress {
+                let percentComplete :Float = 100.0 * Float(progress.completedUnitCount) / Float(progress.totalUnitCount)
+                self.fullImageProgessBar.progress = percentComplete
+            }
+        }
+
         
         
 
@@ -95,6 +119,19 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        // Add a progress observer to an upload task
+
+        
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+
+        
     }
     
     

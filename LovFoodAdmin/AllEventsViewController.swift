@@ -42,12 +42,14 @@ class AllEventsViewController: UITableViewController {
                     .observeSingleEventOfType(.Value, withBlock: { (snapshot) in
                         let profile = CookingProfile(snapshot: snapshot)
                         cookingEvent.profile = profile
+                        
+                        self.cookingEvents.append(cookingEvent)
+                        
+                        let index = self.cookingEvents.indexOf{$0.eventId == cookingEvent.eventId}
+                        self.tableView.insertRowsAtIndexPaths([NSIndexPath(forItem: index!, inSection: 0)], withRowAnimation: .Automatic)
                     })
             }
-            self.cookingEvents.append(cookingEvent)
-            
-            let index = self.cookingEvents.indexOf{$0.eventId == cookingEvent.eventId}
-            self.tableView.insertRowsAtIndexPaths([NSIndexPath(forItem: index!, inSection: 0)], withRowAnimation: .Automatic)
+
         })
         query.observeEventType(.ChildRemoved, withBlock: { (snapshot) in
             let cookingEvent = CookingEvent(snapshot: snapshot)
